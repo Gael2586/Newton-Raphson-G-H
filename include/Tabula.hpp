@@ -21,7 +21,7 @@ protected:
 	double tolerancia;	// Tolerancia
 	double x0; 
 
-public: Tabula(double a, double b, int intervalos )
+void tabula(double a, double b, int intervalos)
 {
 	int puntos = intervalos + 1;
 	
@@ -33,6 +33,8 @@ public: Tabula(double a, double b, int intervalos )
 		cout << "\t" << fixed << setprecision(precision) << a << "\t\t" << fixed << setprecision(precision) << f(a) << endl;
 		a = a + ancho;
 	}
+}
+
     ~Tabula()  
     {
     }

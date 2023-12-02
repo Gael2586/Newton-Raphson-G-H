@@ -5,7 +5,7 @@
 class DoubleF(double x)
 {
 private:
-    /* data */
+   
 public:
     DoubleF(/* args */){
 {
