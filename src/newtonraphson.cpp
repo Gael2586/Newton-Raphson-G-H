@@ -5,11 +5,12 @@
 #include <iostream>
 #include <iomanip> // setprecision
 #include <cmath>
-#include <windows.h>
-
-#define PRECISION 10
-#define MAX_ITERACIONES 100
-#define INTERVALOS 6
+#include <Tabula.hpp>
+#include <Menu.hpp>
+#include <NewtonRaphson.hpp>
+#include <DoubleF.hpp>
+#include <DoubleFDerivada.hpp>
+//#include <windows.h>
 
 using namespace std;
 
@@ -17,21 +18,18 @@ void tabula(double a, double b, int intervalos);	// Muestra un # tabulado de int
 double f(double x);	// Retorna el valor de la función evaluada en x
 double f_derivada(double x); // Retorna la derivada de la función evaluada en x
 void newton_raphson(double x0, double tolerancia, int max_interaciones);	// Función que calcula la raiz aproximada de una función
-int precision;
+
 
 int main()
 {
-	double a;
-	double b;
-	double tolerancia;	// Tolerancia
-	double x0; // Primera aproximación
+
 	
-	cout << setprecision(PRECISION);	// Se establece la precisión
+	/*cout << setprecision(PRECISION);	// Se establece la precisión
 	cout << "Proyecto Hecho por: \nHevan Jesus Viscencio Lopez ----22310198 \nGael Alexandro Silva Huacuja ---22310258\n\n\n ";
 	cout << "\nCalculo de las raices de una funcion aplicando el metodo de Newton - Raphson\n";
 	cout << "\nUsaremos Esta Funcion F(X)=  pow(x,3)+sqrt(x)-6";
 	cout << "\nDonde su derivada seria F'(X)=  3*pow(x,2)+1/(2*sqrt(x))n";
-	cout << "\nIngrese el intervalo inicial (Ejemplo 3,-3):" << endl;
+	cout << "\nIngrese el intervalo inicial (Ejemplo 3,-3):" << endl; */
 	
 	// Se ingresa el intervalo
 	cout << "Ingrese intervalo a= ";
@@ -47,8 +45,8 @@ int main()
         cout << "Valor no válido para fix. Se establecerá en 3 por defecto." << endl;
         precision = 3;
     }
-	// Se tabulan los valores de f para INTERVALOS intervalos
-	tabula(a, b, INTERVALOS);
+	// Se tabulan los valores de f para intervalos intervalos
+	tabula(a, b, intervalos);
 	
 	
 	// Se pide elegir una aproximación inicial
@@ -61,7 +59,7 @@ int main()
 	
 	
 	// Newton Raphson
-	newton_raphson(x0, tolerancia, MAX_ITERACIONES);
+	newton_raphson(x0, tolerancia, max_iteraciones);
 	
 	cin.get();
 	cin.get();
@@ -69,7 +67,7 @@ int main()
 }
 
 
-void tabula(double a, double b, int intervalos)
+/*void tabula(double a, double b, int intervalos)
 {
 	int puntos = intervalos + 1;
 	
@@ -95,10 +93,10 @@ double f_derivada(double x)
 {
 	return 1-(4*cos(x));
 	//return -1 * exp(-x) + 3;
-}
+}*/
 
 
-void newton_raphson(double x0, double tolerancia, int max_iteraciones)
+/*void newton_raphson(double x0, double tolerancia, int max_iteraciones)
 {
 	double x1; // Siguiente aproximación
 	double error;	// Diferencia entre dos aproximaciones sucesivas: x1 - x0
@@ -156,4 +154,4 @@ void newton_raphson(double x0, double tolerancia, int max_iteraciones)
 	} else {
 		cout << "\n\nSe sobrepasó la máxima cantidad de iteraciones permitidas" << endl;
 	}
-}
+}*/
