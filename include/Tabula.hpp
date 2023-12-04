@@ -1,9 +1,18 @@
+<<<<<<< HEAD
+#pragma once 
+#include <iomanip> 
+#include <cmath>
+=======
 #pragma once 
 #include <iostream>
 #include <iomanip> 
 #include <cmath>
 #include <iomanip> 
+>>>>>>> 9ab0b67f72900644288e0132df50b56687321adc
 
+<<<<<<< HEAD
+
+=======
 
 class Tabula
 {
@@ -45,3 +54,5 @@ void tabula(double a, double b, int intervalos)
 
 
 
+
+>>>>>>> 9ab0b67f72900644288e0132df50b56687321adc
