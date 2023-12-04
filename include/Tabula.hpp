@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-#pragma once 
-#include <iomanip> 
-#include <cmath>
-=======
 #pragma once 
 #include <iostream>
 #include <iomanip> 
 #include <cmath>
 #include <iomanip> 
->>>>>>> 9ab0b67f72900644288e0132df50b56687321adc
-
-<<<<<<< HEAD
-
-=======
+using namespace std;
 
 class Tabula
 {
@@ -20,7 +11,7 @@ class Tabula
 private:
    // Primera aproximación
     #define precision 10
-    #define intervalos 6
+    int intervalos=6;
     int puntos = intervalos + 1;
     double ancho = (b - a) / intervalos;
     
@@ -55,4 +46,3 @@ void tabula(double a, double b, int intervalos)
 
 
 
->>>>>>> 9ab0b67f72900644288e0132df50b56687321adc

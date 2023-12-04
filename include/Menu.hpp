@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <iomanip>
+using namespace std;
 
 class Menu
 {
@@ -12,7 +14,7 @@ public:
 	cout << "\nCalculo de las raices de una funcion aplicando el metodo de Newton - Raphson\n";
 	cout << "\nUsaremos Esta Funcion F(X)=  pow(x,3)+sqrt(x)-6";
 	cout << "\nDonde su derivada seria F'(X)=  3*pow(x,2)+1/(2*sqrt(x))n";
-	cout << "\nIngrese el intervalo inicial (Ejemplo 3,-3):" << endl;
+	cout << "\nIngrese el intervalo inicial (Ejemplo 3,-3):";
 
     }
     ~Menu() {}

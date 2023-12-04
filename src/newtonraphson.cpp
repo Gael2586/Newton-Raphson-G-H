@@ -5,7 +5,6 @@
 #include <iostream>
 #include <iomanip> // setprecision
 #include <cmath>
-#include <Tabula.hpp>
 #include <Menu.hpp>
 #include <NewtonRaphson.hpp>
 #include <DoubleF.hpp>

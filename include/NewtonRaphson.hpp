@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cmath>
 #include <Tabula.hpp>
-
+using namespace std;
 
 class NewtonRaphson(double x0, double tolerancia, int max_iteraciones) 
 {
@@ -44,17 +44,17 @@ public:
 			
 			// Se imprimen los valores de la siguiente aproximación x1, f(x1), f_derivada(x1), error
 			cout << "\a";
-			Sleep(500);
+			sleep(500);
 			cout << "\n\nIteracion #" << iteracion << endl;
-			cout << "\nx" << iteracion << "     = " << x1 << "\n"
-				<< "f(x" << iteracion << ")  = " << f(x1) << "\n"
-				<< "f'(x" << iteracion << ") = " << f_derivada(x1) << "\n"
+			cout << "\nx" << iteracion << "     = " << x1 << "\n";
+				<< "f(x" << iteracion << ")  = " << f(x1) << "\n";
+				<< "f'(x" << iteracion << ") = " << f_derivada(x1) << "\n";
 				<< "error  = " << error << endl;
 			
 			// La diferencia entre dos aproximaciones sucesivas es también conocida como error.
 			// La condición de terminación consiste en que que el error debe ser <= que la tolerancia dada
 			// Si se cumple la condición de terminación, se ha encontrado la raiz aproximada buscada.
-			if (error <= tolerancia) { // Condición de terminación
+			if(error <= tolerancia) { // Condición de terminación
 				converge = true;
 				break;
 			
