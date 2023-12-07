@@ -16,6 +16,8 @@ Documentacion:
 
 Diagrama PUML:
 
+![](assets/images/DiagramaClases.jpeg)
+
 
 Funcion de cada clase:
 
