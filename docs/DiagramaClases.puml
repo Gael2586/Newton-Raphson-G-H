@@ -1,0 +1,14 @@
+
+class FDerivada
+class Funcion
+class Menu
+class Tabula
+class NewtonRaphson
+
+
+
+Menu *-- FDerivada
+Menu *-- Funcion
+NewtonRaphson o-- Tabula
+Tabula o-- Funcion
+Tabula o-- FDerivada
