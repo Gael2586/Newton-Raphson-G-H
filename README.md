@@ -31,5 +31,13 @@ Menu.hpp: Esta clase unicamente da las indicaciones iniciales del programa y te 
 
 Newtonraphson.cpp: este el archivo en el cual juntamos todas las clases de manera que el usuario al iniciarlo conozca la funcion principal y su derivada gracias a Menu y elija el intervalo para encontrar el cambio de signo y ponerlo en el programa el cual se lo va a solicitar asi mismo pedira el numero de decimales y la tolerancia la cual sera 0 la mayoria del tiempo para despues mostrarte el numero de iteraciones que hizo para llegar al resultado y asi mismo el resultado de la funcion todo esto esperando sea el programa lo mas intuitivo posible.
 
+Guia para Usar el Programa:
+1- Se mostrara la funcion y su derivada y se te pedira el rango de tabulacion de la funcion.
+2- Una vez mostrado la tabulacion observas e identificas el cambio de signo en la tabulacion debes poner el resultado de esos dos numeros y dividirlos entre 2 para sacar el promedio y tener x0.
+3- Deberas ingresar el numero de fix que son los decimales a utilizar.
+4- Deberas poner 0 en la tolerancia para tener el resultado mas cercano.
+5- observa el numero de tabulaciones y el resultado que te da el programa para finalizar el ejercicio teniendo el resultado y el proceso para resolverlo mediante el metodo Newton-Raphson.
+
 Conclusiones: 
 En este Proyecto logramos aprender bastante y logramos un proyecto funcional para resolver ecuaciones con un metodo en especifico logrando cumplir los objetivos de las dos materias para las cuales se realizo este programa dando un resultado satisfactorio asi como el aprendizaje recabado nos servira mucho a futuro.
+
